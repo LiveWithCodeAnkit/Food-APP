@@ -5,3 +5,16 @@ export const addName = (foodName) => {
     };
   };
   
+  export const addQty=(countNum)=>{
+    return{
+      type:"ADDQty",
+      payload:countNum,
+    };
+  }
+
+  export const removeQty=(countNum)=>{
+    return{
+        type:"RemoveQty",
+        payload:countNum,
+    };
+  }
